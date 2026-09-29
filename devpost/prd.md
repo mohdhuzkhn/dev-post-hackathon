@@ -1,6 +1,6 @@
 ---
 doc: prd
-status: draft
+status: approved
 ---
 
 # VentureStress AI — Product Requirements
@@ -87,7 +87,6 @@ No guaranteed business predictions, arbitrary business scores, invented research
 ## Open Questions
 
 1. The experiment execution boundary is resolved: separate manual pilot.
-2. Needed before conducting a pilot, but not for building the app: confirm a target idea and access to volunteers. Suggested target: VentureStress AI itself, testing usefulness with entrepreneurs. This suggestion has not yet been accepted.
+2. Pilot idea selected by the learner: an AI tutor clone platform where online teachers create AI clones that conduct classes independently. Access to volunteer online teachers remains to be established before a real pilot.
 
-The draft derives the common app behavior from the supplied concept and subsequent decisions. It is not yet approved.
-
+The learner explicitly approved this product plan. The AI tutor clone platform is the pilot subject, not an additional application to build.

@@ -37,7 +37,7 @@ One idea-input journey and one server-side analysis request. Results include an 
 
 The learner has requested source publication to https://github.com/mohdhuzkhn/dev-post-hackathon and deployment. Gemini's free API tier and Netlify Free were explicitly accepted on September 29, 2026, including the discussed free-tier data-policy tradeoff.
 
-The learner also requests conducting real business experiments. Execution will be a separate manual pilot, as confirmed by the learner. The target business and participant access remain open and do not block the app build. Do not imply any real-world validation has occurred merely because an experiment plan was generated.
+The learner also requests conducting real business experiments. Execution will be a separate manual pilot, as confirmed by the learner. The pilot subject is an AI tutor clone platform where online teachers create AI clones that conduct classes independently. Participant access remains open and does not block the app build. Do not imply any real-world validation has occurred merely because an experiment plan was generated.
 
 ## Later
 
@@ -53,8 +53,7 @@ Evidence-backed research and citations, saved analyses, idea comparison, and exp
 
 ## Open Decisions
 
-- Establish the target idea and customer access before conducting the separate manual pilot.
+- Establish access to volunteer online teachers before conducting the separate manual pilot.
 - Verify the exact Gemini model and account limits during technical planning.
 
-The learner approved the core scope with the above domain expansion on September 29, 2026. Real experiment execution details remain explicitly unresolved for product planning.
-
+The learner approved the core scope with the above domain expansion on September 29, 2026. The product plan is approved; volunteer access remains an operational prerequisite for the pilot.
