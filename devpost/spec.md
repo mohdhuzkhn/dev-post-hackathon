@@ -1,6 +1,6 @@
 ---
 doc: spec
-status: draft
+status: approved
 ---
 
 # VentureStress AI — Technical Blueprint
@@ -134,7 +134,7 @@ One provider request and no report database keep the kernel demonstrable. The ma
 
 Accepted: four domains, 2–3 assumptions each, Gemini, Netlify, professional styling, separate manual pilot and push after every completed step.
 
-Recommended for review: Next.js/TypeScript/Tailwind/Zod implementation described here, consistent with the original concept. Learning focus: tracing a typed contract across browser, server and untrusted model output, then checking behavior in production.
+Approved by the learner: Next.js/TypeScript/Tailwind/Zod implementation described here, consistent with the original concept. Learning focus: tracing a typed contract across browser, server and untrusted model output, then checking behavior in production. The learner requested hands-on checks at important AI engineering steps.
 
 Investigate during build: real account access, free-tier model quota, structured-output compatibility and deployed timeout limits. The learner's uncertainty about free platforms was addressed through platform research; the real account checks will validate availability.
 
