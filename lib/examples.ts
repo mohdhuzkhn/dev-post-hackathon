@@ -1,0 +1,1 @@
+export const exampleIdea = 'An AI tutor clone platform where teachers who teach online can create their own AI clone, which can conduct classes independently. Teachers provide their course material and teaching approach; students interact with the AI tutor.';

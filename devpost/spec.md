@@ -108,7 +108,7 @@ README.md                    # Setup, verification and deployment
 
 ## External Services and Dependencies
 
-Gemini: use the documented `generateContent` REST endpoint `POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent`, server-side `x-goog-api-key`, systemInstruction, contents and JSON response configuration. Extract the response text, parse JSON and validate it. Verify current field names against the API documentation when implementing.
+Gemini: use the official `@google/genai` JavaScript SDK and its `models.generateContent` method, which calls the documented `generateContent` REST endpoint `POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent`, server-side `x-goog-api-key`, systemInstruction, contents and JSON response configuration. Extract the response text, parse JSON and validate it. Verify current field names against the API documentation when implementing.
 
 Use `GEMINI_API_KEY` and `GEMINI_MODEL`, never public-prefixed environment variables. Select an available free-tier Flash model through an actual account check; no real API key or account access has been verified yet. Do not promise a specific quota. Keep paid billing disabled. Sources: https://ai.google.dev/api/generate-content and https://ai.google.dev/gemini-api/docs/pricing.
 

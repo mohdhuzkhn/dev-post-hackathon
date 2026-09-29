@@ -1,6 +1,6 @@
 ---
 doc: checklist
-status: draft
+status: approved
 ---
 
 # Build Checklist
@@ -64,3 +64,8 @@ Reflection: Not yet offered.
 Activity mode: Hands-on AI engineering checks, followed by a concise wrap-up using prior practice.
 
 ## Revisions
+
+- Slice 1 live verification passed with gemini-3.1-flash-lite: four domains with two assumptions each, valid priority references, and experiment details rendered in the browser. Nine automated tests passed. Learner hands-on feedback is pending; the slice remains unchecked.
+- Gemini rejected the full Zod-derived provider schema. The wire schema now sends supported structural fields; Zod still enforces counts, lengths and references after generation. The prompt requests exactly two assumptions per domain, within the approved 2–3 range.
+- Gemini 3.8/3.7 returned temporary capacity errors and 2.5 was unavailable to new accounts. The locally verified free-tier model is gemini-3.1-flash-lite. No automatic model fallback is used.
+- The SDK integration replaces direct REST at the learner's request. Initial UI rendering is in app/page.tsx; planned component extraction belongs to slice 2.
