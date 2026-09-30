@@ -37,4 +37,5 @@ The lockfile records exact versions. Initial build: Next.js 16.3.7, React 19.3.0
 
 ## Delivery status
 
-Local implementation is in progress. Netlify deployment and the qualitative matrix are not completed yet. See `devpost/checklist.md` for verified milestones and pending learner checks. Every completed step is committed and pushed. The teacher-clone business experiment is a separate manual pilot requiring real volunteers; no market results have been collected.
+Live app: https://venturestress-ai.netlify.app. Netlify production deployment is verified; the qualitative matrix remains incomplete. See `devpost/checklist.md` for verified milestones and pending learner checks. Every completed step is committed and pushed. The teacher-clone business experiment is a separate manual pilot requiring real volunteers; no market results have been collected.
+
