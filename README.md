@@ -21,6 +21,8 @@ Test fixtures are synthetic and exist only in tests; they never substitute for l
 
 ## AI engineering boundaries
 
+Read [How ideas are checked](devpost/how-ideas-are-checked.md) for the source of the four-domain answers, validation limits and the teacher-clone pilot example.
+
 - `lib/ai/prompts.ts`: analyst role, uncertainty/evidence rules and experiment instructions.
 - `lib/ai/schema.ts`: shared output contract; checks four domains, 2–3 assumptions each and three unique priority references.
 - `lib/ai/analyzeIdea.ts`: server-only SDK call and runtime parsing.
