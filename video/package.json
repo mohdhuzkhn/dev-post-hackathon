@@ -21,7 +21,7 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "render": "remotion render VentureStress ../media/venturestress-showcase.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=2",
+    "render": "remotion render VentureStress ../media/venturestress-showcase.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=1 --timeout=120000",
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
