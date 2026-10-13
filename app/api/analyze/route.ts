@@ -1,6 +1,6 @@
 import { analyzeIdea } from '@/lib/ai/analyzeIdea';
 import { AnalysisError, safeError } from '@/lib/ai/errors';
-import { ideaSchema } from '@/lib/validation/idea';
+import {confirmedMarketSchema} from '@/lib/market/schema';
 export const runtime = 'nodejs';
 export const maxDuration = 60;
 const headers = { 'Cache-Control': 'no-store' };
@@ -24,9 +24,9 @@ export async function POST(request: Request) {
     let body: unknown;
     try { body = JSON.parse(Buffer.concat(chunks).toString('utf8')); }
     catch { throw new AnalysisError('INVALID_INPUT', 'Please send a valid business idea.', 400); }
-    const parsed = ideaSchema.safeParse(body);
+    const parsed = confirmedMarketSchema.safeParse(body);
     if (!parsed.success) throw new AnalysisError('INVALID_INPUT', parsed.error.issues[0].message, 400);
-    return Response.json({ analysis: await analyzeIdea(parsed.data.idea) }, { headers });
+    return Response.json({ analysis: await analyzeIdea(parsed.data.idea,{location:parsed.data.location,segments:parsed.data.segments}) }, { headers });
   } catch (error) {
     const failure = safeError(error);
     return Response.json({ error: { code: failure.code, message: failure.message } }, { status: failure.status, headers });

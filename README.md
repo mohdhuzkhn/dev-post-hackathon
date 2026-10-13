@@ -21,6 +21,8 @@ Test fixtures are synthetic and exist only in tests; they never substitute for l
 
 ## AI engineering boundaries
 
+The target-market workflow asks where the business serves customers, suggests 2–3 editable customer segments, and requires confirmation before analysis. The fifth domain, Local Competitors, provides research candidates with website/product source links when a search-enabled provider is configured. See [target-market implementation and search limitations](devpost/target-market.md). Google Search grounding is unavailable on the current Flash-Lite free tier; no paid billing has been enabled.
+
 Read [How ideas are checked](devpost/how-ideas-are-checked.md) for the source of the four-domain answers, validation limits and the teacher-clone pilot example.
 
 - `lib/ai/prompts.ts`: analyst role, uncertainty/evidence rules and experiment instructions.

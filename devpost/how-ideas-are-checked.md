@@ -4,6 +4,8 @@ VentureStress AI identifies what must be true for an idea to work and proposes w
 
 ## Where the four domains get their answers
 
+The app now collects a confirmed target market before generating these four assumption domains. A separate fifth domain, Local Competitors, uses configured live search and source references. See [the target-market workflow](target-market.md). The four assumption domains remain AI reasoning; competitor search does not automatically validate their claims.
+
 All four domains are generated together in **one server-side Gemini request**, using the official Google GenAI SDK. They are four analytical perspectives, not four independent research agents or databases.
 
 | Domain | What Gemini examines | Evidence a real pilot would need |

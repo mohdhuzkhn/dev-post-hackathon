@@ -4,8 +4,9 @@ import { providerSchema } from './providerSchema';
 import { analysisSchema } from './schema';
 import { systemPrompt } from './prompts';
 import { AnalysisError, safeError } from './errors';
+import {type ConfirmedMarket} from '../market/schema';
 
-export async function analyzeIdea(idea: string) {
+export async function analyzeIdea(idea: string, market?: Omit<ConfirmedMarket,'idea'>) {
   const apiKey = process.env.GEMINI_API_KEY;
   const model = process.env.GEMINI_MODEL;
   if (!apiKey || !model) throw new AnalysisError('NOT_CONFIGURED', 'Live analysis is not configured yet. The site owner needs to set the Gemini key and model.', 503);
@@ -16,7 +17,7 @@ export async function analyzeIdea(idea: string) {
 
     const response = await ai.models.generateContent({
       model,
-      contents: JSON.stringify({ businessIdea: idea }),
+      contents: JSON.stringify({ businessIdea: idea, confirmedTargetMarket: market }),
       config: {
         systemInstruction: systemPrompt,
         responseMimeType: 'application/json',
