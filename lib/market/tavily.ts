@@ -18,7 +18,7 @@ export async function searchTavily(query:string,apiKey:string,fetcher:typeof fet
  }
  try{
   const parsed=searchResponse.parse(await response.json());
-  return parsed.results.filter(s=>safeWebUrl(s.url)).map(s=>({title:s.title||new URL(s.url).hostname,url:s.url,content:s.content.slice(0,3500)}));
+  return parsed.results.filter(s=>safeWebUrl(s.url)).map(s=>({title:s.title||new URL(s.url).hostname,url:s.url,content:s.content.slice(0,1800)}));
  }catch{throw new AnalysisError('SEARCH_INVALID_RESPONSE','Web search returned unusable source data. Please retry research.',502);}
 }
 
