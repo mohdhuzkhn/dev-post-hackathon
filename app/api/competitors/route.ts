@@ -1,4 +1,4 @@
-import {researchCompetitors} from '@/lib/market/research';
+import {researchCompetitors} from '@/lib/market/competitorResearch';
 import {confirmedMarketSchema} from '@/lib/market/schema';
 import {readJson} from '@/lib/validation/readJson';
 import {AnalysisError,safeError} from '@/lib/ai/errors';

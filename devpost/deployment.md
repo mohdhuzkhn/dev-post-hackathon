@@ -15,6 +15,8 @@ The public homepage returned 200; invalid input returned 400. A real analysis of
 
 ## Updating
 
+Tavily integration: run pwsh -File scripts/deploy-netlify.ps1 from the repository to build and deploy while forwarding TAVILY_API_KEY from .env.local or the process environment. The key uses Netlify's masked, functions-only --secret-env deploy override. Each future deployment must forward it again; an ordinary deploy command omits this override. The Gemini project variables remain as previously configured.
+
 Push completed source changes to GitHub, then run `netlify deploy --prod --context production` from the linked project. Configure environment values in Netlify, never in committed files. Stop the local development server before deploying on Windows: it can lock the build directory and cause the adapter's static-content publishing step to fail. Verify the public API after each deployment.
 
 This deployment does not complete the remaining UI work, learner checkpoints, manual business pilot or Devpost submission requirements.

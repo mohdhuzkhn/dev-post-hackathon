@@ -3,8 +3,8 @@ import { analysisShape } from './schema';
 
 // Gemini accepts a subset of JSON Schema. Keep wire schema structural;
 // the full Zod schema still enforces cardinality, lengths and references locally.
-export function providerSchema() {
-  const source = z.toJSONSchema(analysisShape);
+export function providerSchema(shape: z.ZodType = analysisShape) {
+  const source = z.toJSONSchema(shape);
   const allowed = new Set(['type', 'properties', 'required', 'items', 'enum']);
   function simplify(value: unknown): unknown {
     if (Array.isArray(value)) return value.map(simplify);

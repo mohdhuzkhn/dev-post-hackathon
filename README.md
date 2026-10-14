@@ -21,7 +21,7 @@ Test fixtures are synthetic and exist only in tests; they never substitute for l
 
 ## AI engineering boundaries
 
-The target-market workflow asks where the business serves customers, suggests 2–3 editable customer segments, and requires confirmation before analysis. The fifth domain, Local Competitors, provides research candidates with website/product source links when a search-enabled provider is configured. See [target-market implementation and search limitations](devpost/target-market.md). Google Search grounding is unavailable on the current Flash-Lite free tier; no paid billing has been enabled.
+The target-market workflow asks where the business serves customers, suggests 2–3 editable customer segments, and requires confirmation before analysis. The fifth domain, Local Competitors, uses Tavily basic search plus Gemini to produce research candidates with website/product source links. Set TAVILY_API_KEY in .env.local and Netlify to enable it. See [target-market implementation](devpost/target-market.md). Research uses at most two basic Tavily searches per click; no paid billing has been enabled.
 
 Read [How ideas are checked](devpost/how-ideas-are-checked.md) for the source of the four-domain answers, validation limits and the teacher-clone pilot example.
 
