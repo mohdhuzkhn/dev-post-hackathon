@@ -11,6 +11,8 @@ Live URL: https://venturestress-ai.netlify.app
 
 ## Verification
 
+Tavily update: deployed application source e19ba2d, deploy ID 6acecf7c110687c9a7d1d27b. Public homepage returned 200 and showed the Tavily disclosure. A real Karachi competitor request returned four source-linked candidates in six seconds, clearly marking unverified availability. All 19 automated tests, typecheck and production build passed. Use scripts/deploy-netlify.ps1 for future releases so the masked Tavily override is included.
+
 The public homepage returned 200; invalid input returned 400. A real analysis of the approved AI teacher-clone idea returned 200 in 12 seconds and passed the complete Zod schema: four domains, two assumptions per domain, three valid priorities.
 
 ## Updating
