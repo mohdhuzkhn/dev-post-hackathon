@@ -1,0 +1,32 @@
+Your startup idea might be technically possible—and still depend on an assumption you have never tested.
+
+Who will pay?
+Why would they switch?
+Can you deliver it at a sustainable cost?
+
+That gap is why I built VentureStress AI for Devpost's Build With AI: Basics hackathon.
+
+It gives entrepreneurs a structured starting point for validation:
+
+• Define where the business will serve customers.
+• Review and edit 2–3 suggested customer segments, their needs, and who pays.
+• Examine assumptions across demand, competition, economics, and operations.
+• Identify three priorities and explore practical experiments.
+• Research competitor candidates with Tavily and follow the source links.
+
+Each assumption comes with a proposed experiment, a metric, and a decision rule. Competitor results explicitly flag unverified local availability.
+
+My focus with this build: AI that supports a decision and makes its uncertainty visible.
+
+The engineering work included structured-output validation, server-side credentials, recoverable provider errors, and keeping model reasoning distinct from retrieved web evidence.
+
+Built with Next.js, TypeScript, the Google GenAI SDK, Tavily, and Netlify. The current build passes 19 automated tests.
+
+This is a working proof of concept. Customer interviews and real experiments are still needed to test the business hypotheses.
+
+Try it: https://venturestress-ai.netlify.app
+Code: https://github.com/mohdhuzkhn/dev-post-hackathon
+
+If you could test just ONE assumption in your business idea this week, which would it be?
+
+#BuildInPublic #AIEngineering #Entrepreneurship #Hackathon #Devpost
