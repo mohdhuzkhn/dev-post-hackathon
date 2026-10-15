@@ -4,7 +4,9 @@ Who will pay?
 Why would they switch?
 Can you deliver it at a sustainable cost?
 
-That gap is why I built VentureStress AI for Devpost's Build With AI: Basics hackathon.
+I built VentureStress AI for Devpost's Build With AI: Basics hackathon, a challenge focused on learning AI best practices by creating a working proof of concept.
+
+For my project, I chose a problem entrepreneurs face early: turning a promising business idea into assumptions they can actually test. The goal was to put those AI practices into a useful product and grow my AI engineering skills along the way.
 
 It gives entrepreneurs a structured starting point for validation:
 
